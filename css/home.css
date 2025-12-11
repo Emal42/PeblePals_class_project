@@ -177,3 +177,23 @@
     padding: 6px;
     
 }
+.Gallery{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    
+}
+.Picture{
+    -webkit-box-shadow: 2px 4px 15px 2px rgba(0,0,0,0.52); 
+box-shadow: 2px 4px 15px 2px rgba(0,0,0,0.52);
+    margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+
+.Gallery{
+    flex-direction: column;
+}
+
+
+}
