@@ -82,6 +82,7 @@ body {
     position: absolute;
     left: 32px;
     top: 16px;
+    z-index: 50;
 }
 
 .main-footer {
@@ -164,9 +165,7 @@ strong{
     color: var(--text-black);
     font-weight:bold;
 }
-.newsletter-form{
 
-}
 .newsletter-form input{
     margin-bottom: 10px;
     padding: 8px;
@@ -192,4 +191,24 @@ strong{
 .newsletter-form{
     padding-bottom: 10px;
 }
+}
+.clouds-sections{
+    background: #90B7BF;
+    background: linear-gradient(0deg, rgba(144,183,191, 1) 0%, rgba(103,161,188,1));
+    position: relative;
+}
+.cloud{
+    position: absolute;
+    
+}
+.cloud.left{
+    top: 16px;
+}
+.cloud.right{
+    right: 0px;
+    top: 32px;
+}
+.cloud.small{
+    left: 33%;
+    top: 16px;
 }
