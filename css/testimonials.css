@@ -1,14 +1,14 @@
-.testimonials-box{
+.testimonials-box {
     position: relative;
     z-index: 2;
-    border: 1px solid red;
     display: flex;
     gap: 32px;
 
     flex-wrap: wrap;
     max-width: 800px;
 }
-.testimonial{
+
+.testimonial {
     padding: 32px;
     border-radius: 32px;
 
@@ -16,14 +16,51 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(152, 222, 245, 1) 150%);
     max-width: 350px;
 }
-.t-rating-row{
+
+.t-rating-row {
     display: flex;
     justify-content: space-between;
     gap: 16px;
     align-items: center;
     border-bottom: 1px solid var(--text-black);
 }
-.t-message{
+
+.t-message {
     font-weight: 600;
     text-align: center;
+}
+
+.t-form {
+    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(152, 222, 245, 1) 150%);
+    padding: 42px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: var(--card-blue-shadow);
+    margin-top: 16px;
+    width: 650px;
+}
+
+.stars-row {
+    border-bottom: 1px solid var(--text-black)
+}
+
+.t-form-input {
+    background: none;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--text-black);
+    padding: 8px;
+    width: 100%;
+}
+
+.t-bottom-row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    >label {
+        text-wrap: nowrap;
+    }
 }

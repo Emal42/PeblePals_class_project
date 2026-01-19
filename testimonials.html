@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="/css/testimonials.css">
     <script src="/scripts/nav.js" defer></script>
+    <script src="/scripts/testimonials.js" defer></script>
 </head>
 
 <body>
@@ -23,27 +24,23 @@
         <img class="cloud right" src="/assets/cloud_right.png">
 
         <div id="testimonials-box" class="testimonials-box">
-            <div class="testimonial">
-                <div class="t-rating-row">
-                    <div class="t-stars">
-                        <img class="star-img" src="/assets/star_yellow.svg" >
-                        <img class="star-img" src="/assets/star_yellow.svg" >
-                        <img class="star-img" src="/assets/star_yellow.svg" >
-                        <img class="star-img" src="/assets/star_black.svg" >
-                        <img class="star-img" src="/assets/star_black.svg" >
-                    </div>
-                    <p class="t-name">
-                        -Goober
-                    </p>
-                </div>
-                <p class="t-message">
-                    Some temorary text meade by goober
-                </p>
-            </div>
-            <div class="testimonial">
-                Stuff
-            </div>
         </div>
+
+        <form id="t-form" class="t-form">
+            <div class="stars-row">
+                <b>Rate Us:</b>
+
+            </div>
+            <label>
+                Message : <br>
+                <textarea id="t-message" class="t-form-input"></textarea>
+            </label>
+            <div class="t-bottom-row">
+                <label for="email"><b>Your Name</b></label>
+                <input id="name" class="t-form-input" type="email" placeholder="Name">
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </form>
 
 
     </main>
