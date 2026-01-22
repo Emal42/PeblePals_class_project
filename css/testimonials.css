@@ -43,9 +43,7 @@
     width: 650px;
 }
 
-.stars-row {
-    border-bottom: 1px solid var(--text-black)
-}
+
 
 .t-form-input {
     background: none;
@@ -63,4 +61,25 @@
     >label {
         text-wrap: nowrap;
     }
+}
+.stars-row {
+    border-bottom: 1px solid var(--text-black);
+    display: flex;
+}
+.star{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-image: url(/assets//star_yellow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: all 0.2s ease-in-out;
+    > input{
+        display: none;
+    }
+}
+
+.star:has(input:checked)~.star{
+    background-image: url(/assets/star_black.svg);
 }
